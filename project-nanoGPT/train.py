@@ -48,13 +48,22 @@ try:
 except ImportError:
     in_colab = False
 
+drive_mount_point = '/content/drive'
 if in_colab and mount_google_drive:
-    from google.colab import drive
-    drive_mount_point = '/content/drive'
-    if not os.path.ismount(drive_mount_point):
-        print("Mounting Google Drive to /content/drive ...")
-        drive.mount(drive_mount_point)
-    out_dir = '/content/drive/MyDrive/nanogpt_checkpoints'
+    if os.path.exists('/content/drive/MyDrive'):
+        out_dir = '/content/drive/MyDrive/nanogpt_checkpoints'
+    else:
+        try:
+            from google.colab import drive
+            if not os.path.ismount(drive_mount_point):
+                print("Attempting to mount Google Drive...")
+                drive.mount(drive_mount_point)
+            out_dir = '/content/drive/MyDrive/nanogpt_checkpoints'
+        except Exception as e:
+            print(f"Notice: Google Drive could not be mounted from CLI script ({e}).")
+            print("Tip: To save checkpoints to Google Drive, run `drive.mount('/content/drive')` in a Colab notebook cell beforehand.")
+            print("Falling back to local 'checkpoints' directory.")
+            out_dir = 'checkpoints'
 else:
     out_dir = 'checkpoints'
 
