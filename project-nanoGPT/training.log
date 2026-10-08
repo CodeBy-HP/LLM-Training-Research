@@ -1,0 +1,41 @@
+2026-10-08 15:49:39 WandB run initialized with ID: a9gdcz6f (resume='allow')
+2026-10-08 15:49:39 Starting training on cuda (steps 0 to 5000)...
+2026-10-08 15:49:48 W1008 10:19:48.990000 3936 torch/_inductor/utils.py:1731] [0/0] Not enough SMs to use max_autotune_gemm mode
+2026-10-08 15:49:49 /usr/local/lib/python3.13/dist-packages/torch/_inductor/compile_fx.py:2941: UserWarning: Tesla T4 does not support bfloat16 compilation natively, skipping
+2026-10-08 15:49:49   warnings.warn(
+2026-10-08 15:50:54 Step 0: train loss 4.2880, val loss 4.2802
+2026-10-08 15:50:55 Saved full checkpoint: /content/drive/MyDrive/nanogpt_checkpoints/ckpt_iter_00000_val_4.2802.pt
+2026-10-08 15:50:56 /usr/local/lib/python3.13/dist-packages/torch/_inductor/compile_fx.py:2941: UserWarning: Tesla T4 does not support bfloat16 compilation natively, skipping
+2026-10-08 15:50:56   warnings.warn(
+2026-10-08 15:50:56 /usr/local/lib/python3.13/dist-packages/torch/_inductor/compile_fx.py:2941: UserWarning: Tesla T4 does not support bfloat16 compilation natively, skipping
+2026-10-08 15:50:56   warnings.warn(
+2026-10-08 15:50:57 /usr/local/lib/python3.13/dist-packages/torch/_inductor/compile_fx.py:2941: UserWarning: Tesla T4 does not support bfloat16 compilation natively, skipping
+2026-10-08 15:50:57   warnings.warn(
+2026-10-08 15:56:46 Step 500: train loss 1.5205, val loss 1.7155
+2026-10-08 15:56:46 Saved full checkpoint: /content/drive/MyDrive/nanogpt_checkpoints/ckpt_iter_00500_val_1.7155.pt
+2026-10-08 16:02:34 Step 1000: train loss 1.2646, val loss 1.5099
+2026-10-08 16:02:35 Saved full checkpoint: /content/drive/MyDrive/nanogpt_checkpoints/ckpt_iter_01000_val_1.5099.pt
+2026-10-08 16:08:23 Step 1500: train loss 1.1470, val loss 1.4646
+2026-10-08 16:08:24 Saved full checkpoint: /content/drive/MyDrive/nanogpt_checkpoints/ckpt_iter_01500_val_1.4646.pt
+2026-10-08 16:08:24 Removed older checkpoint to preserve storage: /content/drive/MyDrive/nanogpt_checkpoints/ckpt_iter_00000_val_4.2802.pt
+2026-10-08 16:14:12 Step 2000: train loss 1.0512, val loss 1.4654
+2026-10-08 16:20:00 Step 2500: train loss 0.9588, val loss 1.4896
+2026-10-08 16:25:49 Step 3000: train loss 0.8696, val loss 1.5311
+2026-10-08 16:31:37 Step 3500: train loss 0.7870, val loss 1.5732
+2026-10-08 16:37:26 Step 4000: train loss 0.7132, val loss 1.6155
+2026-10-08 16:43:14 Step 4500: train loss 0.6645, val loss 1.6494
+2026-10-08 16:49:03 Step 4999: train loss 0.6292, val loss 1.6816
+2026-10-08 16:49:03 
+2026-10-08 16:49:03 --- Training Complete. Generating Sample ---
+2026-10-08 16:49:03 Loading best weights from /content/drive/MyDrive/nanogpt_checkpoints/ckpt_iter_01500_val_1.4646.pt for text generation...
+2026-10-08 16:49:06 
+2026-10-08 16:49:06 He dukes from the sister leisure of his chamber;
+2026-10-08 16:49:06 This noble might is now shall she discontent him which
+2026-10-08 16:49:06 As came the forth and the oracles our hate,
+2026-10-08 16:49:06 Great and cries his form and for causes are slain,
+2026-10-08 16:49:06 That from hence better rusting in honour in my request;
+2026-10-08 16:49:06 When she will not hear on the rest,
+2026-10-08 16:49:06 That this shot, as part like a free sciff' lives,
+2026-10-08 16:49:06 When you do before his face discatch in his mother's ears,
+2026-10-08 16:49:06 If we may surpose her honour of him at home,
+2026-10-08 16:49:06 As so bring his heavy instant rescuesting for his sorro
