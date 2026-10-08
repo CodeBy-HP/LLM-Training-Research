@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Environments
+.env
+.venv
+venv/
+ENV/
+
+# PyTorch Checkpoints & Models
+*.pt
+*.pth
+*.ckpt
+checkpoints/
+out/
+
+# Data & Logging
+input.txt
+wandb/
+
+# OS Specific
+.DS_Store
+Thumbs.db
+
+andrej
+to_go_deep.md
+gameplan.md
